@@ -11,12 +11,12 @@ public class Principal {
         Consumidor c2 = new Consumidor(recurso);
         //Define o tempo de atraso do consumidor
         c1.setTempo(750);
-        c2.setTempo(1000);
+        c2.setTempo(100);
 
         //Cria os produtor
         Produtor p1 = new Produtor(recurso);
         //Define o tempo de atraso do produto
-        p1.setTempo(1000);
+        p1.setTempo(100);
         //Cria as Threads dos consumidores e produtores
         Thread t1 = new Thread(c1);
         Thread t2 = new Thread(p1);
